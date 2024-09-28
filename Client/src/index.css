@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+:root {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  /* Color variables*/
+  --light-green: #7DCEA0;
+  --dark-green: #1D8348;
+  --white: #FBFCFC;
+  --yellow: #F1C40F;
+  --dark-yellow: #D4AC0D;
+  --mid-gray: #566573;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .btn{
+  border: none;
+  background-color: var(--dark-yellow);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 5;
+  width: 150px;
+  height: 50px;
+  font-weight: 300;
+} */
+/* .liner{
+  width: 130px;
+  height: 50px;
+  background-color: var(--light-green);
+  position: absolute;
+  left: 2%;
+  top: 6px;
+  z-index: 2;
+} */
+/* CSS */
+
+/* Text styling */
+.h2-yellow{
+  color: var(--white);
+  font-size: 2.7rem;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.para-white{
+  font-size: 1.15rem;
+  letter-spacing: 1.2px;
+  margin: 10px 0px;
+  color: var(--white);
+  font-weight: 300;
+}
+.h4__sub-header{
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+.para-white_over{
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  margin: 0px 20px 0px 0px;
+  letter-spacing: 1.2px;
+}

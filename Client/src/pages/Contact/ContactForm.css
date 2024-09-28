@@ -1,0 +1,161 @@
+.contactForm__container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 90vh;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.contactForm-header{
+    color: var(--white);
+    position: absolute;
+    font-family: "Satisfy", cursive;
+    top: 50px;
+    left: 30px;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+.contactForm-Img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(132deg, #a8fc41, #025711, #1c3b24);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    overflow: hidden;
+    padding:0;
+    margin:0px;
+}
+@keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .contactForm-contacts_Img{
+    display: flex;
+    height: 33vh;
+    width: 100%;
+    background: url(../../assets/about_banner.webp) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    top: 0;
+  }
+.form{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    width: 90%;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 90%;
+    width: 100%;
+}
+.form-input{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+}
+.form-input input{
+    width: 44vw;
+    height: 70%;
+    display: flex;
+    margin: 10px 0px;
+    border: none;
+    outline: none;
+    padding: 0px 5px;
+    border: 1px solid var(--white);
+}
+.form-input input{
+    width: 44vw;
+    height: 8vh;
+    display: flex;
+    margin: 10px 0px;
+    font-size: 1rem;
+}
+.form-text{
+    display: flex;
+    height: 30vh;
+    width: 100%;
+}
+.form-text textarea{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+.contact-btn__container{
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    justify-content: end;
+    outline: none;
+}
+/* 
+ */
+ .contactForm-contacts{
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+ }
+ .contactForm-mail, .contactForm-email, .contactForm-phonenumber{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+    border-bottom: 1px solid var(--white);
+    color: var(--white);
+    padding: 10px 0px;
+ }
+ .contactForm-mail .mail{
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: 200;
+    letter-spacing: 2px;
+ }
+ .bsMailBox, .MdAlternateEmail, .MdOutlinePhone{
+    font-size: 1.3rem;
+ }
+.contactForm-phonenumber .phone{ 
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+    font-weight: 200;
+ }
+ .contactForm-email .email{
+    font-size: 12px;
+    padding-left: 10px;
+    font-weight: 200;
+    letter-spacing: 2px;
+ }

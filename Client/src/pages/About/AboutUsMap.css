@@ -1,0 +1,119 @@
+.aboutUsMap__container{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.aboutUsMap__Img-container{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.aboutUsMap__desc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: radial-gradient(
+    circle at -1% 57.5%,
+    rgb(19, 170, 82) 0%,
+    rgb(0, 102, 43) 90%
+  );
+}
+/* Left side card styles */
+.aboutUsMap__desc-card{
+  display: flex;
+  width: 80%;
+  height: 90%;
+  border-radius: 10px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  flex-direction: column;
+}
+.card-header{
+  display: flex;
+  height: 38vh;
+  width: 100%;
+  background: url(../../assets/chameleon.webp) no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.card-text_header{
+  display: flex;
+  height: 7vh;
+  width: 100%;
+  padding: 0px 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+.card-text_header h2{
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.card-para{
+  display: flex;
+  width: 100%;
+  min-height: 20vh;
+  padding: 0px 20px;
+}
+.para{
+  display: flex;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-weight: 200;
+  text-align: justify;
+}
+.card-likes_container{
+  display: flex;
+  height: 10vh;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding: 0px 10px;
+}
+.iosHeart{
+  color: var(--white);
+  font-size: 3rem;
+}
+
+/*  */
+/* Mapbox styles Imports */
+.map-container{
+  display: flex;
+  width: 100%;
+  height: 100% !important;
+}
+/* .sidebarStyle {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  background-color: #404040;
+  color: #ffffff;
+  z-index: 1 !important;
+  padding: 6px;
+  font-weight: bold;
+} */
+
+.marker {
+  background-color: #4CAF50;
+  border: 1px solid blue;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
