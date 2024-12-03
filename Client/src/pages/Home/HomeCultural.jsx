@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 // 
 import {slideCulturalImgs} from './../../data'
 import 'react-awesome-slider/dist/custom-animations/cube-animation.css';

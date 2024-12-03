@@ -1,6 +1,21 @@
 import lushotoImage from './assets/lushoto.webp'
 import magambaVillage from './assets/magamba_village.webp'
 import mamboVillage from './assets/mambo-village.webp'
+import img1 from './assets/tanzaia_secret_img_1.jpg'
+import img2 from './assets/tanzaia_secret_img_2.jpg'
+import img3 from './assets/tanzaia_secret_img_3.jpg'
+import img4 from './assets/tanzaia_secret_img_4.jpg'
+import img5 from './assets/tanzaia_secret_img_5.jpg'
+import img6 from './assets/tanzaia_secret_img_6.jpg'
+import img7 from './assets/tanzaia_secret_img_7.jpg'
+import img8 from './assets/elias_lushoto.jpg'
+import img9 from './assets/tanzaia_secret_img_9.jpg'
+import img10 from './assets/tourists_abous_us.webp';
+import img11 from './assets/Usambara_Mountains__Tanzania.webp';
+import img12 from './assets/guests_with-host.webp';
+
+
+
 // 
 const slideCulturalImgs = [
     {
@@ -198,4 +213,53 @@ const reviews =
         ]
 }
 
-export  {slideCulturalImgs, reviews};
+const images = [
+  {
+    id: 1,
+    img_url: `${img1}`
+  },
+  {
+    id: 2,
+    img_url:  `${img2}`
+  },
+  {
+    id: 3,
+    img_url:  `${img3}`
+  },
+  {
+    id: 4,
+    img_url:  `${img4}`
+  },
+  {
+    id: 5,
+    img_url:  `${img5}`
+  },
+  {
+    id: 6,
+    img_url:  `${img6}`
+  }, 
+  {
+    id: 7,
+    img_url:  `${img7}`
+  }, 
+  {
+    id: 8,
+    img_url: `${img8}`
+  },
+  {
+    id: 9,
+    img_url:  `${img9}`
+  },
+  {
+    id: 10,
+    img_url:  `${img10}`
+  }, {
+    id: 11,
+    img_url:  `${img11}`
+  }, {
+    id: 12,
+    img_url:  `${img12}`
+  },
+]
+
+export  {slideCulturalImgs, reviews, images};

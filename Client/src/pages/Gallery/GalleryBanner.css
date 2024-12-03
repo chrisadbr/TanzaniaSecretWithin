@@ -1,0 +1,29 @@
+.gallery_banner__container {
+  display: flex;
+  align-items: center;
+  height: 95vh;
+  width: 100%;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(4,4,24,0.2) 58%), url(../../assets/about_us_banner.jpg) no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+}
+.gallery_banner__header {
+  font-family: "Satisfy", cursive;
+  color: var(--white);
+  letter-spacing: 2px;
+  height: 20vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.gallery_banner__header h1{
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.gallery_banner__header p {
+  font-size: 2rem;
+  text-align: center;
+}

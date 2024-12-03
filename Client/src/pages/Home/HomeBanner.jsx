@@ -1,4 +1,5 @@
-import Navigation from '../../components/Navigation'
+/* eslint-disable react/react-in-jsx-scope */
+// import Navigation from '../../components/Navigation'
 import './HomeBanner.css'
 
 // 

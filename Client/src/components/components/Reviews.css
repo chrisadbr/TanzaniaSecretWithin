@@ -1,0 +1,115 @@
+.reviews__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    background: url(../assets/reviews_bcg.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+.reviews__wrapper{
+    /* display: flex; */
+    height: 60vh;
+    width: 80%;
+    background: rgba(125, 206, 160, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.7px);
+    -webkit-backdrop-filter: blur(12.7px);
+    border: 1px solid rgba(125, 206, 160, 0.46);
+    
+}
+.reviews__contect{
+    /* display: flex;
+    flex-direction: row; */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.review-container{
+    width: 100%;
+    height: 100%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease-out;
+    /* transition-duration: 0.5s; */
+}
+.img-name__container{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    margin: 10px 0px;
+}
+.reviews__img-container{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.reviews__img-container img{
+    width: 100%;
+    height: 100%;
+}
+.review-username{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+}
+.review-username h4{
+   font-weight: 400;
+   letter-spacing: 1.2px;
+   padding: 0px 10px;
+   color: var(--white);
+   font-size: 1.1rem;
+}
+.review_rating_date_header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+}
+.review_rating{
+    display: flex;
+    width: 100%;
+    height: 4vh;
+    margin-left: -17px;
+}
+.review_header h4{
+    display: flex;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+}
+.review_date{
+    color: var(--white);
+    letter-spacing: 1.3px;
+    font-size: 17px;
+    font-weight: 300;
+}
+.slides-btn__container-review{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+}
+.carousel__btn-review{
+    border: none;
+    border-radius: 50%;
+    font-size: 5px;
+    background-color: transparent;
+    padding: '5px';
+}

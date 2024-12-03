@@ -1,0 +1,51 @@
+.gallery-advert__container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: rgb(2,0,36, 0.7);
+  align-items: center;
+  justify-content: center;
+}
+.gallery-advert__video {
+  top: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.sponsor_logos{
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  width: 25%;
+}
+.manyaraLogo {
+  width: 270px;
+  height: 60px;
+  background-color: white;
+  padding: 0px 10px;
+}
+.nyerereLogo {
+  width: 250px;
+  height: 60px;
+}
+.ngorongoroImg {
+  width: 110px;
+  height: 130px;
+}
+.serengetiLogo {
+  width: 150px;
+  height: 150px;
+}

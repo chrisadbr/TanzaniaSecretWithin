@@ -1,0 +1,114 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "img": "attractions/nilo_reserve.jpg",
+        "title": "Nilo Nature Forest Reserve",
+        "description": "Nilo Nature Forest Reserve covering an area of 6,025 ha is located in the East Usambara Mountains and falls under three districts of Muheza, Korogwe and Mkinga in Tanga Region. The reserve is among the 25 biodiversity ‘hotspot’ in the world and is designated as World Heritage sites."
+      },
+      "geometry": {
+        "coordinates": [38.66166, -4.91891],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "img": "attractions/saadani_national_park.jpg",
+        "title": "Saadani National Park",
+        "description": "Saadani National Park is often overlooked, despite its unique coastal location. It's the only place where you can combine an adventure safari with a relaxing stay on stunning white beaches lined with palm trees."
+      },
+      "geometry": {
+        "coordinates": [-5.9972, 38.7548],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "img": "attractions/gombe_national_park.webp",
+        "title": "Gombe Stream National Park",
+        "description": "Gombe National Park is a narrow strip of ancient forest set in a mountainous area with steep valleys clinging to the shores of Lake Tanganyika. The main attraction is the chimpanzees that live protected within its boundaries."
+      },
+      "geometry": {
+        "coordinates": [29.6446, -4.6983],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "img": "attractions/usambara_mnts.webp",
+        "title": "West Usambara Mountains",
+        "description": "The West Usambara Mountains are primarily located in Lushoto District, with a smaller portion in Korogwe District. This mountain range reaches altitudes up to 2200m. The region is densely populated, with approximately 181,011 people spread across 215 villages."
+      },
+      "geometry": {
+        "coordinates": [38.499998, -4.749997],
+        "type": "Point"
+
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "img": "attractions/wildebeest-migration-.jpg",
+        "title": "Serengeti National Park",
+        "description": "Serengeti National Park is famous for hosting the world's greatest mammal migration. Each year, over 2 million wildebeest, zebras, and gazelles traverse an 800 km (500 mi) loop across the Mara-Serengeti ecosystem."
+      },
+      "geometry": {
+        "coordinates": [34.567, -2.333],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "img": "attractions/ngorongoro.jpg",
+        "title": "Ngorongoro Conservation Reserve",
+        "description": "The Ngorongoro Conservation Area is a vast, untouched protected area that boasts the densest wildlife populations on earth, stunning landscapes, mountains, and the world's largest unbroken caldera. It also has a rich history of human evolution.."
+      },
+      "geometry": {
+        "coordinates": [35.45, -3.2],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "img": "attractions/nyerere_np.jpg",
+        "title": "Nyerere National Park",
+        "description": "Covering 30,893 square kilometers, Nyerere National Park is Africa's largest stand-alone National Park and one of the largest worldwide. Located in southeastern Tanzania, it lies roughly 230 kilometers from Dar es Salaam city to Mtemere Gate."
+      },
+      "geometry": {
+        "coordinates": [37.4, -9.0],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "img": "attractions/mswa_game_reserve.jpg",
+        "title": "Maswa Game Reserve",
+        "description": "Maswa Game Reserve is an extraordinarily beautiful area featuring wide open plains along the southern edge of the Serengeti. The landscape includes rolling hills covered in thickets and rock outcrops, known as kopjes, interspersed with seasonally dry rivers containing permanent water holes."
+      },
+      "geometry": {
+        "coordinates": [34.5971, -3.2844],
+        "type": "Point"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "img": "attractions/rubondo_islands.jpg",
+        "title": "Rubondo Islands National Park",
+        "description": "Explore the chimps habituation experience on the beautiful islands of Lake Victoria, the world's second-largest freshwater lake. Rubondo National Park is located in northwest Tanzania, 150 km (about 95 miles) west of Mwanza at the entrance to Emini Pasha Gulf."
+      },
+      "geometry": {
+        "coordinates": [31.833, -2.3],
+        "type": "Point"
+      }
+    }
+  ],
+  "type": "FeatureCollection"
+}
