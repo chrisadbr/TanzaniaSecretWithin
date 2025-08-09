@@ -1,4 +1,4 @@
-﻿# TanzaniaSecretWithin
+﻿# Tanzania Secret Within
   Tanzania Secret Within is a professional local tour organizer in Tanzania dedicated in taking
           you into cultural diversity of Africa. Were an extremely experienced tour organizer offering a
           wide range of readymade and tailored services to meet your specific needs. Our aim is to Offer
@@ -10,4 +10,5 @@
           in Mwanza region, Bukoba and Lake Tanganyika in Kigoma, and have some packages for beach
           holidays in Tanga and Pangani, Bagamoyo, Mafia, and Kilwa. We Offer small fun filled
           packages to travellers. 
+
 
