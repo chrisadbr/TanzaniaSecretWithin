@@ -58,3 +58,47 @@
   letter-spacing: 1px;
   text-align: justify;
 }
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .abousUsProfile__container {
+    display: flex;
+    height: 110vh;
+    width: 100%;
+    padding: 0px 5px;
+  }
+
+  .aboutUsProfile__wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .aboutUsProfile__desc {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7px;
+  }
+
+  .aboutUsProfile__Img {
+    display: flex;
+    background-position: bottom;
+    background-size: 100%;
+    width: 100%;
+    height: 40%;
+    top: 0;
+  }
+
+  .aboutUsProfile__header {
+    display: flex;
+    height: 5vh;
+    width: 100%;
+    align-items: center;
+  }
+
+  .aboutUsProfile__header .header {
+    letter-spacing: 2px;
+    font-size: calc(3 * 2vw);
+  }
+}

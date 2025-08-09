@@ -1,42 +1,56 @@
-.contactForm__container{
+.contactForm__container {
     display: flex;
     width: 100%;
     height: 100vh;
     background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
 }
-.contactForm{
+
+.contactForm {
     display: flex;
-    flex-direction: column;
     width: 50%;
-    height: 90vh;
-    justify-content: flex-end;
+    height: 100%;
+    justify-content: center;
     align-items: center;
     position: relative;
 }
-.contactForm-header{
+
+.contactForm-header {
     color: var(--white);
-    position: absolute;
-    font-family: "Satisfy", cursive;
-    top: 50px;
-    left: 30px;
-    font-size: 3.5rem;
+    font-size: 3rem;
     letter-spacing: 2px;
-}
-.contactForm-Img{
+    font-weight: 400;
+    margin-top: 40px;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(132deg, #a8fc41, #025711, #1c3b24);
-    background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
-    position: relative;
-    height: 100vh;
-    width: 50%;
-    overflow: hidden;
-    padding:0;
-    margin:0px;
+    width: 100%;
 }
-@keyframes Gradient {
+
+.contactForm-para {
+    color: #fff;
+    width: 80%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contactForm-para p {
+    font-size: 17px;
+    text-align: center;
+}
+
+.contactForm-Img {
+    display: flex;
+    align-items: center;
+    background: url(../../assets//masai_woman.webp) no-repeat;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+}
+
+/* @keyframes Gradient {
     0% {
       background-position: 0% 50%;
     }
@@ -46,8 +60,8 @@
     100% {
       background-position: 0% 50%;
     }
-  }
-  .contactForm-contacts_Img{
+  } */
+.contactForm-contacts_Img {
     display: flex;
     height: 33vh;
     width: 100%;
@@ -55,26 +69,34 @@
     background-size: 100%;
     background-position: center;
     top: 0;
-  }
-.form{
+}
+
+.form {
     display: flex;
     align-items: center;
-    height: 80vh;
+    justify-content: center;
+    flex-direction: column;
+    height: 95%;
     width: 90%;
+    border-radius: 30px;
 }
-.form-content{
+
+.form-content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     height: 90%;
     width: 100%;
 }
-.form-input{
-    width: 100%;
+
+.form-input {
+    width: 90%;
     height: 10vh;
     display: flex;
 }
-.form-input input{
+
+.form-input input {
     width: 44vw;
     height: 70%;
     display: flex;
@@ -82,53 +104,69 @@
     border: none;
     outline: none;
     padding: 0px 5px;
-    border: 1px solid var(--white);
 }
-.form-input input{
+
+.form-input input {
     width: 44vw;
     height: 8vh;
     display: flex;
-    margin: 10px 0px;
+    margin-bottom: 30px;
+    padding: 0px 10px;
     font-size: 1rem;
+    font-family: "Jost", sans-serif;
+    border: none;
+    letter-spacing: 1px;
 }
-.form-text{
+
+.form-text {
     display: flex;
-    height: 30vh;
+    justify-content: center;
+    height: 20vh;
     width: 100%;
 }
-.form-text textarea{
+
+.form-text textarea {
     display: flex;
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     padding: 5px;
     font-size: 1rem;
     outline: none;
+    font-family: "Jost", sans-serif;
+    letter-spacing: 1px;
+    border: none;
 }
-.contact-btn__container{
+
+.contact-btn__container {
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 12vh;
     justify-content: end;
+    margin-top: 10px;
     outline: none;
 }
+
 /* 
  */
- .contactForm-contacts{
+.contactForm-contacts {
     height: 80vh;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-   /* From https://css.glass */
-    background: rgba(255, 255, 255, 0.2);
+    /* From https://css.glass */
+    /* background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    overflow: hidden;
- }
- .contactForm-mail, .contactForm-email, .contactForm-phonenumber{
+    overflow: hidden; */
+}
+
+.contactForm-mail,
+.contactForm-email,
+.contactForm-phonenumber {
     display: flex;
     align-items: center;
     width: 100%;
@@ -136,26 +174,111 @@
     border-bottom: 1px solid var(--white);
     color: var(--white);
     padding: 10px 0px;
- }
- .contactForm-mail .mail{
+}
+
+.contactForm-mail .mail {
     padding-left: 10px;
     font-size: 12px;
     font-weight: 200;
     letter-spacing: 2px;
- }
- .bsMailBox, .MdAlternateEmail, .MdOutlinePhone{
+}
+
+.bsMailBox,
+.MdAlternateEmail,
+.MdOutlinePhone {
     font-size: 1.3rem;
- }
-.contactForm-phonenumber .phone{ 
+}
+
+.contactForm-phonenumber .phone {
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 2px;
     padding-left: 10px;
     font-weight: 200;
- }
- .contactForm-email .email{
+}
+
+.contactForm-email .email {
     font-size: 12px;
     padding-left: 10px;
     font-weight: 200;
     letter-spacing: 2px;
- }
+}
+
+@media screen and (max-width: 768px) {
+    .contactForm__container {
+        flex-direction: column;
+    }
+
+    .contactForm {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .contactForm-header {
+        font-size: calc(2 * 3vw);
+        font-weight: 400;
+        margin-top: 20px;
+        height: 5vh;
+    }
+
+    .contactForm-para {
+        color: #fff;
+        width: 80%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+    .contactForm-para p {
+        font-size: calc(1.5 * 2vw);
+        text-align: center;
+    }
+
+    .form-input {
+        width: 90%;
+        height: 6vh;
+        display: flex;
+    }
+
+    .form-input input {
+        width: 81vw;
+        height: 80%;
+        margin: 10px 0px;
+        padding: 0px 5px;
+    }
+
+    .contactForm-mail,
+    .contactForm-email,
+    .contactForm-phonenumber {
+        height: 5vh;
+        padding: 5px 0px;
+    }
+
+    .form-text {
+        display: flex;
+        justify-content: center;
+        height: 15vh;
+        width: 100%;
+    }
+
+    .form-text textarea {
+        display: flex;
+        width: 90%;
+        margin-top: 10px;
+        padding: 5px;
+        font-size: 1rem;
+        outline: none;
+        font-family: "Jost", sans-serif;
+        letter-spacing: 1px;
+        border: none;
+    }
+
+    .contactForm-Img {
+        width: 100%;
+    }
+}

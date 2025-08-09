@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Satisfy&display=swap');
+
 :root {
   font-family: "Jost", sans-serif;
   font-optical-sizing: auto;
@@ -10,13 +11,18 @@
   --yellow: #F1C40F;
   --dark-yellow: #D4AC0D;
   --mid-gray: #566573;
+  --old-gold: #BFAE48;
+  --dark-slate-gray: #204E4A;
+  --buff: #ECBA82;
+  --bitter-sweet: #BC4749; 
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 /* .btn{
   border: none;
   background-color: var(--dark-yellow);
@@ -40,28 +46,45 @@
 /* CSS */
 
 /* Text styling */
-.h2-yellow{
+.h2-yellow {
   color: var(--white);
   font-size: 2.7rem;
   letter-spacing: 2px;
   font-weight: 300;
 }
-.para-white{
+
+.para-white {
   font-size: 1.15rem;
   letter-spacing: 1.2px;
   margin: 10px 0px;
   color: var(--white);
   font-weight: 300;
 }
-.h4__sub-header{
+
+.h4__sub-header {
   color: var(--white);
   font-weight: 400;
   letter-spacing: 2px;
   font-size: 1.1rem;
 }
-.para-white_over{
+
+.para-white_over {
   overflow-y: scroll;
   scrollbar-width: thin;
   margin: 0px 20px 0px 0px;
   letter-spacing: 1.2px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .h2-yellow {
+    color: var(--white);
+    font-size: calc(2.5 * 2vw);
+  }
+  .para-white {
+    font-size: calc(1.7 * 2vw);
+    letter-spacing: 2px;
+    margin: calc(1.5 * 1vw) 0px;
+    color: var(--white);
+  }
 }

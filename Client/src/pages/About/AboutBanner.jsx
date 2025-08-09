@@ -1,8 +1,14 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import './AboutBanner.css';
 import Button from '../../components/Button/Button';
 
-const AboutBanner = () => {
+const AboutBanner = ({toAttractionsRef}) => {
+  const scrollToAttractions = () => {
+    if (toAttractionsRef.current) {
+      toAttractionsRef.current.scrollIntoView();
+    }
+  }
   return (
     <>
       <div className="aboutBanner__container">
@@ -15,7 +21,11 @@ const AboutBanner = () => {
           </p>
         </div>
         <div className="aboutBanner__exploreBtn-container">
-          <Button content='Expore Our Service Locations' type='btn-wide' />
+          <Button 
+            content='Expore Our Service Locations' 
+            type='btn-wide' 
+            setOnClick={scrollToAttractions}
+          />
         </div>
         <ul className="circles">
           <li></li>
@@ -30,9 +40,6 @@ const AboutBanner = () => {
           <li></li>
         </ul>
       </div>
-      {/* <div className="aboutUsBanner__Img-container">
-        <div className="aboutBanner__ImgBcg"></div>
-      </div> */}
     </>
   );
 };

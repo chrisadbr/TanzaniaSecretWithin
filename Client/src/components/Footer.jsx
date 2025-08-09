@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { CiFacebook } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
 import { FaTripadvisor } from "react-icons/fa";
@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
       <div className="footer__logo__rights">
           <div className="footer__logo-container">
-            <img src={Logo}  style={{width: '70px', height: '70px'}}/>
+            <img src={Logo}  className='footer__logo-img' />
           </div>
           <div className="footer__rights-container">
             <p className="rights">

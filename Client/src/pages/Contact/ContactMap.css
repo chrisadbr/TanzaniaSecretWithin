@@ -1,17 +1,162 @@
-.map-container{
-    width: 100%;
-    height: 50vh;
-    display: flex;
+.contactMap__container {
+  display: flex;
+  width: 100%;
+  height: 42vh;
 }
+
+.map-container {
+  width: 50%;
+  height: 42vh;
+  display: flex;
+}
+
+.contactMap__contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 42vh;
+  background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
 .sidebar {
-    background-color: rgb(35 55 75 / 90%);
-    color: #fff;
-    padding: 6px 12px;
-    font-family: monospace;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 12px;
-    border-radius: 4px;
+  background-color: rgb(35 55 75 / 90%);
+  color: #fff;
+  padding: 6px 12px;
+  font-family: monospace;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 12px;
+  border-radius: 4px;
+}
+
+/* Contact Info css */
+.contactMap-email {
+  display: flex;
+  width: 50%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 70px;
+}
+
+.contactMap-mail {
+  display: flex;
+  width: 49%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+.contactMap-phonenumber {
+  display: flex;
+  width: 33%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+h4 {
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.mail,
+.email,
+.phone {
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.contactMap-mail_info,
+.contactMap-email_info,
+.contactMap-phone_info {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-left: 30px;
+}
+
+.mailboxIc__container,
+.emailIc__container,
+.phoneNoIc__container {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bsMailBox,
+.MdOutlinePhone,
+.MdAlternateEmail {
+  /* border-radius: 5px; */
+  color: rgb(19, 170, 82);
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contactMap__container {
+    flex-direction: column-reverse;
   }
+
+  .map-container {
+    width: 100%;
+    height: 22vh;
+    display: flex;
+  }
+
+  .contactMap__contactInfo {
+    width: 100%;
+    height: 20vh;
+  }
+
+  .contactMap-email {
+    width: 50%;
+    height: 7vh;
+    margin-top: 20px;
+    margin-left: 100px;
+  }
+
+  .mailboxIc__container,
+  .emailIc__container,
+  .phoneNoIc__container {
+    width: 30px;
+    height: 30px;
+  }
+
+  .bsMailBox,
+  .MdOutlinePhone,
+  .MdAlternateEmail {
+    /* border-radius: 5px; */
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: calc(1 * 2vw);
+  }
+
+  .mail,
+  .email,
+  .phone {
+    font-size: calc(1 * 2vw);
+  }
+
+  .contactMap-mail {
+    margin-left: 100px;
+  }
+
+  .contactMap-phonenumber {
+    margin-left: 100px;
+  }
+}

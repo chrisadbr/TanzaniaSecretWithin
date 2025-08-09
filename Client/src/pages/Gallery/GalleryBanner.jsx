@@ -6,8 +6,9 @@ const GalleryBanner = () => {
     <div className='gallery_banner__container'>
       <div className="gallery_banner__header">
         <h1>Wonderlust Awaits</h1>
-        <p>&quot;Captivating Images of Our Destinations&quot;</p>
+        <p>Captivating Images of Our Destinations</p>
       </div>
+      <div className="gallery_banner_shadow" />
     </div>
   )
 }

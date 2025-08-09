@@ -1,28 +1,29 @@
-.aboutUsMap__container{
+.aboutUsMap__container {
   display: flex;
   width: 100%;
   height: 100vh;
 }
-.aboutUsMap__Img-container{
+
+.aboutUsMap__Img-container {
   display: flex;
   width: 50%;
   height: 100%;
   position: relative;
 }
-.aboutUsMap__desc{
+
+.aboutUsMap__desc {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
   height: 100%;
-  background: radial-gradient(
-    circle at -1% 57.5%,
-    rgb(19, 170, 82) 0%,
-    rgb(0, 102, 43) 90%
-  );
+  background: radial-gradient(circle at -1% 57.5%,
+      rgb(19, 170, 82) 0%,
+      rgb(0, 102, 43) 90%);
 }
+
 /* Left side card styles */
-.aboutUsMap__desc-card{
+.aboutUsMap__desc-card {
   display: flex;
   width: 80%;
   height: 90%;
@@ -37,18 +38,21 @@
   overflow: hidden;
   flex-direction: column;
 }
-.card-header{
+
+.card-header {
   display: flex;
   height: 42vh;
   width: 100%;
   background-size: 100%;
   background-position: center;
 }
-.card-img{
+
+.card-img {
   width: 100%;
   height: 100%;
 }
-.card-text_header{
+
+.card-text_header {
   display: flex;
   height: 7vh;
   width: 100%;
@@ -56,18 +60,21 @@
   align-items: center;
   margin-top: 20px;
 }
-.card-text_header h2{
+
+.card-text_header h2 {
   color: var(--white);
   font-weight: 400;
   letter-spacing: 2px;
 }
-.card-para{
+
+.card-para {
   display: flex;
   width: 100%;
   min-height: 20vh;
   padding: 0px 20px;
 }
-.para{
+
+.para {
   display: flex;
   color: var(--white);
   letter-spacing: 1px;
@@ -75,7 +82,8 @@
   font-weight: 200;
   text-align: justify;
 }
-.card-likes_container{
+
+.card-likes_container {
   display: flex;
   height: 10vh;
   width: 100%;
@@ -84,18 +92,20 @@
   margin-top: 20px;
   padding: 0px 10px;
 }
-.iosHeart{
+
+.iosHeart {
   color: var(--white);
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 /*  */
 /* Mapbox styles Imports */
-.map-container{
+.map-container_ {
   display: flex;
   width: 100%;
   height: 100% !important;
 }
+
 /* .sidebarStyle {
   display: inline-block;
   position: absolute;
@@ -126,6 +136,7 @@
   border: 1px solid var(--white);
   width: 30px;
 }
+
 .marker::after {
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
@@ -139,4 +150,40 @@
   transition: all 0.3s ease-out;
   width: 0;
   z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutUsMap__container {
+    flex-direction: column-reverse;
+  }
+
+  .aboutUsMap__Img-container {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    position: relative;
+  }
+
+  .aboutUsMap__desc-card {
+    width: 90%;
+    height: 92%;
+  }
+
+  .aboutUsMap__desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+  }
+
+  .card-header {
+    height: 25vh;
+  }
+
+  .card-text_header h2 {
+    font-weight: 400;
+    font-size: calc(2 * 2vw);
+    letter-spacing: 2px;
+  }
 }

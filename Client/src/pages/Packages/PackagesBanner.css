@@ -1,0 +1,55 @@
+.packages__bannner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  width: 100%;
+  background: url(../../assets//packages_banner.png) no-repeat;
+  background-size: 100%;
+  background-position: center;
+  font-family: "Satisfy", cursive;
+}
+
+.packages__banner-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.packages__banner-wrapper_header {
+  color: var(--white);
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.packages__banner-wrapper-text {
+  display: flex;
+  color: var(--white);
+  font-size: 2rem;
+}
+
+/* Responsive banner */
+@media screen and (max-width: 768px) {
+  .packages__bannner-container {
+    height: 80vh;
+    background-size: cover;
+  }
+
+  .packages__banner-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+
+  .packages__banner-wrapper_header {
+    color: var(--white);
+    font-size: calc(4 * 2vw);
+    font-weight: 700;
+  }
+
+  .packages__banner-wrapper-text {
+    font-size: calc(1.4 * 2vw);
+  }
+}

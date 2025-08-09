@@ -1,0 +1,234 @@
+.mikumi-package__container {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
+}
+
+.mikumi-package__wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 98%;
+}
+
+.mikumi-package__trips {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+}
+
+.mikumi-package__card {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  background-color: var(--old-gold);
+  justify-content: center;
+  align-items: center;
+}
+
+.mikumi-package__card .card__container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 90%;
+  border: double 10px var(--white);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.mikumi-package__card .card__container .card-bcg {
+  display: flex;
+  width: 100%;
+  height: 85%;
+  background: url(../../assets/giraffe.png) no-repeat;
+  background-size: 110%;
+  background-position: top;
+  background-color: var(--white);
+}
+
+.mikumi-package__card .card__container .card-footer {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  background-color: var(--white);
+  align-items: center;
+  justify-content: center;
+}
+
+.mikumi-package__trips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+
+.mikumi-package__trips-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 97%;
+}
+
+.mikumi-package__trips-container .trips-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.mikumi-package__trips-container .trips-header h1 {
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-size: 1.8rem;
+}
+
+.mikumi-package__trips-container .trips-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+  margin-top: 1%;
+}
+
+.mikumi-package__trips-container .trips-body_item {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  margin-top: 2%;
+  height: 20vh;
+}
+
+.trips-body_item .trips-body_item-header {
+  display: flex;
+  width: 100%;
+  height: 5vh;
+  align-items: center;
+}
+
+.trips-body_item .trips-body_item-header h6 {
+  font-size: 1.3rem;
+  color: var(--white);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.trips-body_item .trips-body_item-header .item-count {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 999px;
+  justify-content: center;
+  margin-left: 1%;
+  color: var(--dark-green);
+  font-weight: 700;
+}
+
+.trips-body_item .trips-body_item-text {
+  color: var(--white);
+  width: 100%;
+  height: 14vh;
+  display: flex;
+  margin-top: 1%;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.mikumi-package__card .card__container .card-footer .card-footer-text {
+  font-size: 1.7rem;
+  font-family: "Satisfy", cursive;
+  text-align: center;
+  color: var(--old-gold);
+  font-weight: 500;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .mikumi-package__container {
+    flex-direction: column-reverse;
+  }
+
+  .mikumi-package__wrapper {
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mikumi-package__trips {
+    width: 100%;
+    height: 50%;
+  }
+
+  .mikumi-package__card {
+    width: 100%;
+    height: 50%;
+  }
+
+  .mikumi-package__trips-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+  }
+
+  .mikumi-package__trips-container .trips-body_item {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin-top: 1%;
+    height: 10vh;
+    margin-bottom: 1%;
+  }
+
+  .trips-body_item .trips-body_item-header {
+    height: 3vh;
+  }
+
+  .trips-body_item .trips-body_item-header h6 {
+    font-size: var(1 * 2vw);
+    letter-spacing: 1px;
+  }
+
+  .mikumi-package__trips-container .trips-header {
+    height: 6vh;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+
+  .mikumi-package__trips-container .trips-header h1 {
+    letter-spacing: 3px;
+    font-size: calc(2 * 2vw);
+  }
+
+  .trips-body_item .trips-body_item-header .item-count {
+    width: 25px;
+    height: 25px;
+    margin-left: 2%;
+  }
+
+  .mikumi-package__card .card__container {
+    width: 50%;
+    height: 80%;
+  }
+  .mikumi-package__card .card__container .card-footer .card-footer-text {
+    font-size: calc(1.7 * 2vw);
+    text-align: center;
+    color: var(--dark-slate-gray);
+    font-weight: 500;
+  }
+}

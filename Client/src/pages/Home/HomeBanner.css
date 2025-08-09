@@ -1,24 +1,27 @@
-.homebanner__container{
+.homebanner__container {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
     background: radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%);
 }
-.homebanner__nav-container{
+
+.homebanner__nav-container {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 10vh;
     z-index: 10;
 }
-.homebanner__wrapper{
+
+.homebanner__wrapper {
     display: flex;
     width: 100%;
     height: 90vh;
     position: relative;
 }
-.homebanner__text-container{
+
+.homebanner__text-container {
     display: flex;
     width: 50%;
     height: 80%;
@@ -27,7 +30,8 @@
     padding: 0px 20px;
     margin-top: 100px;
 }
-.homebanner__img-container{
+
+.homebanner__img-container {
     display: flex;
     width: 50%;
     height: 100vh;
@@ -38,4 +42,30 @@
     /* top: -10vh; */
     right: 0;
     z-index: 5;
+}
+
+
+@media screen and (max-width: 768px) {
+    .homebanner__wrapper {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0px 1vw;
+    }
+    .homebanner__text-container {
+        width: 100%;
+        height: calc(5 * 10vw);
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px 5px;
+        margin-top: 1rem;
+    }
+
+    .homebanner__img-container {
+        width: 100%;
+        height: 80%;
+        display: block;
+        /* position: absolute; */
+        /* top: -10vh; */
+        /* top: 0; */
+    }
 }

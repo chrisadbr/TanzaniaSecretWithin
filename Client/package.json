@@ -1,5 +1,6 @@
 {
   "name": "client",
+  "homepage": "http://www.tanzaniasecretwithin.co.tz",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +12,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.1.10",
     "axios": "^1.7.2",
     "feather-icons": "^4.29.2",
     "framer-motion": "^11.3.8",

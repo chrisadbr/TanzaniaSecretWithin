@@ -2,11 +2,16 @@
 import './Navigation.css'
 import { Link } from 'react-router-dom'
 import Logo from '../assets/tsw_logo.png'
+import { useState } from 'react';
 
 // 
 const Navigation = () => {
+  const [openMobileMenu, setOpenMobilMenu] = useState(false);
   return (
     <div className='nav__container'>
+      <div className="hambugger__opener">
+
+      </div>
       <div className="nav__logo-container">
         <img src={Logo} style={{width: '60px', height: '60px'}} />
       </div>

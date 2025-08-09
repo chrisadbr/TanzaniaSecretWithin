@@ -1,5 +1,5 @@
 import lushotoImage from './assets/lushoto.webp'
-import magambaVillage from './assets/magamba_village.webp'
+// import magambaVillage from './assets/magamba_village.webp'
 import mamboVillage from './assets/mambo-village.webp'
 import img1 from './assets/tanzaia_secret_img_1.jpg'
 import img2 from './assets/tanzaia_secret_img_2.jpg'
@@ -27,14 +27,14 @@ const slideCulturalImgs = [
     {
         id: 2,
         day: 'Day 2',
-        path: `${magambaVillage}`,
+        path: `${img6}`,
         name: 'Magamba village'
     },
     {
         id: 3,
         day: 'Day 3',
-        path: `${mamboVillage}`,
-        name: 'Mambo village'
+        path: `${img9}`,
+        name: 'Sunrise'
     }
 ]
 

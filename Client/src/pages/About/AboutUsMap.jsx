@@ -1,9 +1,10 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, {useEffect, useRef, useState} from 'react';
+import React, {forwardRef, useEffect, useImperativeHandle, useRef, useState} from 'react';
 // 
 import mapboxgl from 'mapbox-gl';
 import { createRoot } from 'react-dom/client';
-import { IoIosHeartEmpty } from "react-icons/io";
+// import { IoIosHeartEmpty } from "react-icons/io";
 // import geoJson from './chicago-parks.json';
 import geoJson from './attractions.json';
 // 
@@ -22,7 +23,17 @@ const Marker = ({ children, feature, setDesc }) => {
   );
 };
 // 
-const AboutUsMap = () => {
+// eslint-disable-next-line react/display-name
+const AboutUsMap = forwardRef((props, ref) => {
+  const attractionsRef = useRef();
+  useImperativeHandle(ref, () => ({
+    scrollIntoView: () => {
+      attractionsRef.current.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }))
   //
   const [{title, description, img}, setDesc] = useState(geoJson.features[3].properties);
   const mapContainerRef = useRef(null);
@@ -61,11 +72,10 @@ const AboutUsMap = () => {
     window.alert(title);
   };
   //
-  console.log(img);
   return (
-    <div className="aboutUsMap__container">
+    <div className="aboutUsMap__container" ref={attractionsRef}>
       <div className="aboutUsMap__Img-container">
-        <div className="map-container" ref={mapContainerRef} />
+        <div className="map-container_" ref={mapContainerRef} />
       </div>
       <div className="aboutUsMap__desc">
         <div className="aboutUsMap__desc-card">
@@ -80,13 +90,13 @@ const AboutUsMap = () => {
               <p className="para">{description}</p>
             </div>
           </div>
-          <div className="card-likes_container">
+          {/* <div className="card-likes_container">
             <IoIosHeartEmpty className="iosHeart" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
   );
-}
+});
 
 export default AboutUsMap

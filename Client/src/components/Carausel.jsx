@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
 // import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 // import { HiOutlineChevronLeft , HiOutlineChevronRight} from "react-icons/hi2";
@@ -19,7 +22,7 @@ export default function Carousel({slides, autoslides=false, interval=3000 }){
     return (
         <div className="carousel__container">
             <div className='slides__container' style={{transform: `translateX(-${curr * 100}%)`}}>
-            {Object.values(slides).map((img, i) => (
+            {Object.values(slides).map((img) => (
                 <img src={img.path} alt={img.path} />
              ))}
             </div>

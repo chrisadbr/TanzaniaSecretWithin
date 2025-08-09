@@ -1,9 +1,11 @@
 /* eslint-disable react/react-in-jsx-scope */
 // import Navigation from '../../components/Navigation'
+import { useNavigate } from 'react-router'
 import './HomeBanner.css'
 
 // 
 const HomeBanner = () => {
+  const navigate = useNavigate();
   return (
     <div className="homebanner__container">
       {/* <div className="homebanner__nav-container">
@@ -13,7 +15,12 @@ const HomeBanner = () => {
         <div className="homebanner__text-container">
           <h2 className="h2-yellow">Tanzania Secret Within</h2>
           <p className='para-white'>Tanzania Secret Within is a professional local tour organizer in Tanzania dedicated in taking you into cultural diversity of Africa. Were an extremely experienced tour organizer offering a wide range of readymade and tailored services to meet your specific needs.</p>
-          <button className="btn">Learn more</button>
+          <button
+            className="btn"
+            onClick={() => navigate('/about')}
+          >
+            Learn more
+          </button>
           <span className="liner" />
         </div>
         <div className="homebanner__img-container">

@@ -3,11 +3,23 @@
   align-items: center;
   height: 95vh;
   width: 100%;
-  background: rgb(2,0,36);
-  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(4,4,24,0.2) 58%), url(../../assets/about_us_banner.jpg) no-repeat;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(4, 4, 24, 0.2) 58%), url(../../assets/about_us_banner.jpg) no-repeat;
   background-size: 100%;
   background-position: bottom;
+  position: relative;
 }
+
+.gallery_banner_shadow {
+  height: 7vh;
+  width: 100%;
+  position: absolute;
+  background: rgb(9, 9, 121);
+  background: linear-gradient(180deg, rgba(9, 9, 121, 0.8) 0%, rgba(214, 243, 214, 0) 100%);
+  top: 0;
+  left: 0;
+}
+
 .gallery_banner__header {
   font-family: "Satisfy", cursive;
   color: var(--white);
@@ -18,12 +30,39 @@
   justify-content: center;
   margin-top: 30px;
 }
-.gallery_banner__header h1{
+
+.gallery_banner__header h1 {
   font-size: 5rem;
   font-weight: 700;
   text-align: center;
 }
+
 .gallery_banner__header p {
   font-size: 2rem;
   text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .gallery_banner__container {
+    height: 60vh;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(4, 4, 24, 0.2) 58%), url(../../assets/about_us_banner.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .gallery_banner__header {
+    letter-spacing: 2px;
+    height: 10vh;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .gallery_banner__header h1 {
+    font-size: calc(2 * 4vw);
+  }
+
+  .gallery_banner__header p {
+    font-size: calc(2 * 2vw);
+  }
 }

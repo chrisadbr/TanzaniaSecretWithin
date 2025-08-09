@@ -1,11 +1,19 @@
 import React from 'react'
 import './Packages.css';
+import PackagesBanner from './PackagesBanner';
+import MikumiPackage from './MikumiPackage';
+import MkomaziPackage from './MkomaziPackage';
+import ComboPackage from './ComboPackage';
+import Footer from '../../components/Footer';
 
 const Packages = () => {
   return (
-    <div className='packages__container'>
-      <h1>This page is under construction</h1>
-      <p>Coming soon</p>
+    <div>
+      <PackagesBanner />
+      <MikumiPackage />
+      <MkomaziPackage />
+      <ComboPackage />
+      <Footer />
     </div>
   )
 }

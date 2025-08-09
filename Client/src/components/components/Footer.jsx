@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { CiFacebook } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
 import { FaTripadvisor } from "react-icons/fa";

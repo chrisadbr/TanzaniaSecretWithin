@@ -1,4 +1,4 @@
-.reviews__container{
+.reviews__container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,8 @@
     background-attachment: fixed;
     position: relative;
 }
-.reviews__wrapper{
+
+.reviews__wrapper {
     /* display: flex; */
     height: 60vh;
     width: 80%;
@@ -20,9 +21,10 @@
     backdrop-filter: blur(12.7px);
     -webkit-backdrop-filter: blur(12.7px);
     border: 1px solid rgba(125, 206, 160, 0.46);
-    
+
 }
-.reviews__contect{
+
+.reviews__contect {
     /* display: flex;
     flex-direction: row; */
     width: 100%;
@@ -30,7 +32,7 @@
     overflow: hidden;
 }
 
-.review-container{
+.review-container {
     width: 100%;
     height: 100%;
     padding: 0px 30px;
@@ -41,7 +43,8 @@
     transition: ease-out;
     /* transition-duration: 0.5s; */
 }
-.img-name__container{
+
+.img-name__container {
     display: flex;
     align-items: center;
     height: 10vh;
@@ -49,17 +52,20 @@
     position: relative;
     margin: 10px 0px;
 }
-.reviews__img-container{
+
+.reviews__img-container {
     height: 60px;
     width: 60px;
     border-radius: 50%;
     overflow: hidden;
 }
-.reviews__img-container img{
+
+.reviews__img-container img {
     width: 100%;
     height: 100%;
 }
-.review-username{
+
+.review-username {
     display: flex;
     width: 100%;
     height: 40px;
@@ -67,49 +73,152 @@
     align-items: center;
     font-weight: 500;
 }
-.review-username h4{
-   font-weight: 400;
-   letter-spacing: 1.2px;
-   padding: 0px 10px;
-   color: var(--white);
-   font-size: 1.1rem;
+
+.review-username h4 {
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    padding: 0px 10px;
+    color: var(--white);
+    font-size: 1.1rem;
 }
-.review_rating_date_header{
+
+.review_rating_date_header {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 15vh;
 }
-.review_rating{
+
+.review_rating {
     display: flex;
     width: 100%;
     height: 4vh;
     margin-left: -17px;
 }
-.review_header h4{
+
+.review_header h4 {
     display: flex;
     color: var(--white);
     font-weight: 400;
     font-size: 1.2rem;
     letter-spacing: 1.3px;
 }
-.review_date{
+
+.review_date {
     color: var(--white);
     letter-spacing: 1.3px;
     font-size: 17px;
     font-weight: 300;
 }
-.slides-btn__container-review{
+
+.slides-btn__container-review {
     display: flex;
     position: absolute;
     align-items: center;
     justify-content: space-between;
     width: 95%;
 }
-.carousel__btn-review{
+
+.carousel__btn-review {
     border: none;
     border-radius: 50%;
     font-size: 5px;
     background-color: transparent;
     padding: '5px';
+}
+
+.caraosel_arrow {
+    color: #fff;
+    font-size: 3rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .reviews__container {
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .reviews__wrapper {
+        height: 80%;
+        width: 85%;
+        border-radius: 8px;
+    }
+
+    .carousel__btn-review {
+        border: none;
+        border-radius: 50%;
+        font-size: 2px;
+        padding: 10px;
+        margin: 0px -1.8rem;
+    }
+
+    .reviews__contect {
+        width: 100%;
+        height: 95%;
+        overflow: hidden;
+    }
+
+    .review-container {
+        width: 100%;
+        height: 100%;
+        padding: 0px 10px;
+        transition: ease-out;
+    }
+
+    .img-name__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 20vh;
+        width: 100%;
+        position: relative;
+        margin: 0px;
+    }
+
+    .reviews__img-container {
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .review-username {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        margin: 5px 0px;
+    }
+
+    .review-username h4 {
+        font-weight: 400;
+        letter-spacing: 2px;
+        padding: 0px;
+        font-size: calc(2 * 2.3vw);
+    }
+
+    .review_rating_date_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .review_rating {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 4vh;
+    }
+
+    .caraosel_arrow {
+        font-size: 2rem;
+        margin-left: calc(1 * 2vw);
+    }
 }
